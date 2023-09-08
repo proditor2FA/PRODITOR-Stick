@@ -1,4 +1,4 @@
-# PRODITOR Stick
+# PRODITOR Solution
 
 Advanced eight-digit two-factor HOTP solution. Designed to secure remote desktop access.
 
