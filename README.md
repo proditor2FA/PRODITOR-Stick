@@ -1,6 +1,6 @@
 # PRODITOR Solution
 
-http://www.proditor.de
+https://www.proditor.de
 
 Advanced eight-digit two-factor HOTP solution. Designed to secure remote desktop access.
 
