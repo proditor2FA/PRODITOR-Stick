@@ -7,16 +7,16 @@
 /*********************************************************************/
 
 /* This program is free software: you can redistribute it and/or modify
-/* it under the terms of the GNU General Public License as published by
-/* the Free Software Foundation, version 3.
-/*
-/* This program is distributed in the hope that it will be useful, but
-/* WITHOUT ANY WARRANTY; without even the implied warranty of
-/* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-/* General Public License for more details.
-/*
-/* You should have received a copy of the GNU General Public License
-/* along with this program. If not, see <http://www.gnu.org/licenses/>.
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, version 3.
+  
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+   General Public License for more details.
+  
+   You should have received a copy of the GNU General Public License
+   along with this program. If not, see <http://www.gnu.org/licenses/>.*/
 
 /*
 * 
@@ -36,13 +36,13 @@
 #include "hotp.h"
 
 //read the secret from flash located at position 0x3eec ((last flash page -1) - 0x14)
-//#define READ_SECRET_FROM_FLASH
+#define READ_SECRET_FROM_FLASH
 
 //set security bit on first power up for copy protection - only a full chip erase will help! 
-#define SET_SECURITY_BIT_ON_FIRST_STARTUP
+//#define SET_SECURITY_BIT_ON_FIRST_STARTUP
 
 //send a roll-key code every 60 seconds for presence detection
-//#define SEND_ROLL_KEY_EVERY_MINUTE
+#define SEND_ROLL_KEY_EVERY_MINUTE
 
 //hotp setup
 static char secret[] = {0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x30,0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x30}; //12345678901234567890
