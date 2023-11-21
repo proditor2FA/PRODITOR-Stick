@@ -211,6 +211,7 @@ int main(void)
 	};
 
 	usbdc_register_handler(USBDC_HDL_SOF, &usbd_sof_event_h);
+	
 	gpio_set_pin_level(LED0, 1);
 	while (1) {
 

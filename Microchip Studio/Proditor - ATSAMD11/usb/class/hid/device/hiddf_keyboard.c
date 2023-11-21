@@ -77,7 +77,11 @@ const uint8_t keyboard_report_desc[KEYBOARD_REPORT_DESC_LEN] = {
     0x75, 0x08, /* Report Size (8)                   */
     0x95, 0x06, /* Report Count (6)                  */
     0x81, 0x00, /* Input (Data, Array)               */
-    0x05, 0x08, /* Usage Page (LED)                  */
+
+//JoSch     
+//	0x05, 0x09, /* Usage Page (LED)                  */
+
+    0x05, 0x0C, /* Usage Page (LED)                  */
     0x19, 0x01, /* Usage Minimum (1)                 */
     0x29, 0x05, /* Usage Maximum (5)                 */
     0x15, 0x00, /* Logical Minimum (0)               */
@@ -88,7 +92,10 @@ const uint8_t keyboard_report_desc[KEYBOARD_REPORT_DESC_LEN] = {
     0x95, 0x03, /* Report Count (3)                  */
     0x91, 0x01, /* Output (Constant)                 */
     0xC0        /* End Collection                    */
-};
+ };
+
+	
+	
 
 /* USB Device HID Keyboard Function Instance */
 static struct usbdf_driver _hiddf_keyboard;
